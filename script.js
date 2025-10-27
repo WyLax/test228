@@ -1,3 +1,4 @@
-Function greet() {
+function greet() {
 	alert("Привет бро");
+
 }
