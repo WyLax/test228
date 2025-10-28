@@ -53,10 +53,11 @@ body {
   width: 100%;
   margin: 10px 0;
   padding: 10px;
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
   transition: all 0.2s ease;
   border: none;
+  background: none;
   background-color: #d8a48f;
   border-radius: 8px;
 }
@@ -64,7 +65,7 @@ body {
 /* Эффект при наведении */
 .menu button:hover {
   padding: 15px; /* немного увеличиваем внутренние отступы */
-  font-size: 20px; /* слегка увеличиваем текст */
+  font-size: 25px; /* слегка увеличиваем текст */
   background-color: #bb8588;
 }
 
