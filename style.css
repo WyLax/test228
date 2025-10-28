@@ -64,7 +64,19 @@ body {
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
+/* Убираем голубое выделение при клике на кнопку */
+button,
 button:focus,
-.hamburger:focus {
+button:active,
+.hamburger,
+.hamburger:focus,
+.hamburger:active {
   outline: none;
+  box-shadow: none;
+  -webkit-tap-highlight-color: transparent; /* для телефонов */
+}
+
+/* Чтобы и при клике на мобильных не было подсветки */
+* {
+  -webkit-tap-highlight-color: transparent;
 }
