@@ -30,8 +30,8 @@ body {
 .menu {
   position: fixed;
   top: 0;
-  right: -250px; /* Скрыто за пределами экрана */
-  width: 250px;
+  right: -100%; /* Скрыто за пределами экрана */
+  width: 100%;
   height: 100%;
   background-color: #d6ce93;
   box-shadow: -2px 0 5px rgba(0,0,0,0);
