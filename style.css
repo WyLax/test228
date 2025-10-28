@@ -77,7 +77,7 @@ font-size: 45px; /* слегка увеличиваем текст */
 }
 
 
-mstick {
+.stick {
 position: fixed;
 top: 80px;
 right: -100%;
