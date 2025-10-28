@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>Wylax | Test-2.2.8</title>
+  <title>Wylax | Меню</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Это мой сайт Wylax</h1>
-    <p>Проект Test228</p>
+    <h1>Wylax</h1>
+    <!-- Кнопка гамбургера -->
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
   </header>
 
-  <main>
-    <h2>Мои достижения</h2>
-    <ul>
-      <li>хз</li>
-      <li>хз</li>
-    </ul>
-    <button onclick="greet()">Нажми меня</button>
-  </main>
+  <!-- Шторка с меню -->
+  <nav id="side-menu">
+    <a href="#">Главная</a>
+    <a href="#">О сайте</a>
+    <a href="#">Контакты</a>
+    <a href="#">Ссылки</a>
+  </nav>
 
-  <footer>
-    <p>© 2025 Wylax</p>
-  </footer>
+  <main>
+    <h2>Контент сайта</h2>
+    <p>Здесь основной контент твоего сайта.</p>
+  </main>
 
   <script src="script.js"></script>
 </body>
