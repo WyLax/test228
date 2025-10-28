@@ -24,3 +24,21 @@ button {
 button:hover {
   background: #e0e0e0;
 }
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  header, footer {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 250px;
+    font-size: 18px;
+    padding: 12px;
+  }
+}
