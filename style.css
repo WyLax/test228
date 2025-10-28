@@ -8,8 +8,8 @@ background-color: #a3a380
 /* Кнопка гамбургера */
 .hamburger {
 position: fixed;
-top: 20px;
-right: 20px;
+top: 25px;
+right: 25px;
 width: 30px;
 height: 20px;
 cursor: pointer;
