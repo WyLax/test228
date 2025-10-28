@@ -1,4 +1,4 @@
-function greet() {
-	alert("Привет бро");
-
+function toggleMenu() {
+  const menu = document.getElementById("side-menu");
+  menu.classList.toggle("open");
 }
