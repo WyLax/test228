@@ -57,12 +57,14 @@ body {
 /* Анимация для крестика */
 .hamburger.active div:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
+  background-color: #9a3f3f;
 }
 .hamburger.active div:nth-child(2) {
   opacity: 0;
 }
 .hamburger.active div:nth-child(3) {
   transform: rotate(-45deg) translate(6px, -6px);
+  background-color: #c1856d;
 }
 
 /* Убираем голубое выделение при клике на кнопку */
