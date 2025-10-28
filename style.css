@@ -37,7 +37,7 @@ background-color: #222222;
 box-shadow: -2px 0 5px rgba(0,0,0,0);
 padding: 50px 20px;
 box-sizing: border-box;
-transition: right 0.3s;
+transition: left 0.3s;
 z-index: 1000;
 }
 
