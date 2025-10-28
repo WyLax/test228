@@ -1,98 +1,102 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  overflow-x: hidden;
-  background-color: #a3a380
+margin: 0;
+font-family: Arial, sans-serif;
+overflow-x: hidden;
+background-color: #a3a380
 }
 
 /* Кнопка гамбургера */
 .hamburger {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
-  z-index: 1001;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+position: fixed;
+top: 20px;
+right: 20px;
+width: 30px;
+height: 20px;
+cursor: pointer;
+z-index: 1001;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 }
 
 .hamburger div {
-  height: 4px;
-  background-color: #d6ce93;
-  border-radius: 2px;
-  transition: all 0.3s;
+height: 4px;
+background-color: #d6ce93;
+border-radius: 2px;
+transition: all 0.3s;
 }
 
-/* Выдвигающееся меню */
+/* Выдвигающееся меню /
 .menu {
-  position: fixed;
-  top: 0;
-  right: -100%; /* Скрыто за пределами экрана */
-  width: 100%;
-  height: 100%;
-  background-color: #222222;
-  box-shadow: -2px 0 5px rgba(0,0,0,0);
-  padding: 50px 20px;
-  box-sizing: border-box;
-  transition: right 0.3s;
-  z-index: 1000;
+position: fixed;
+top: 0;
+right: -100%; / Скрыто за пределами экрана */
+width: 100%;
+height: 100%;
+background-color: #222222;
+box-shadow: -2px 0 5px rgba(0,0,0,0);
+padding: 50px 20px;
+box-sizing: border-box;
+transition: right 0.3s;
+z-index: 1000;
 }
 
 .menu.open {
-  right: 0;
+right: 0;
 }
 
 .menu button {
-  font-family: 'Helvetica', Arial, sans-serif;
-  font-weight: bold;
-  color: #efebce;
-  display: block;
-  width: 100%;
-  margin: 10px 0;
-  padding: 10px;
-  font-size: 20px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  border: none;
-  background: none;
-  border-radius: 8px;
+font-family: 'Helvetica', Arial, sans-serif;
+font-weight: bold;
+color: #efebce;
+display: block;
+width: 100%;
+margin: 10px 0;
+padding: 10px;
+font-size: 20px;
+cursor: pointer;
+transition: all 0.2s ease;
+border: none;
+background: none;
+border-radius: 8px;
 }
 
-/* Эффект при наведении */
+/* Эффект при наведении /
 .menu button:hover {
-  padding: 15px; /* немного увеличиваем внутренние отступы */
-  font-size: 25px; /* слегка увеличиваем текст */
+padding: 15px; / немного увеличиваем внутренние отступы /
+font-size: 25px; / слегка увеличиваем текст */
 }
 
 /* Анимация для крестика */
 .hamburger.active div:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-  background-color: #a3a380;
+transform: rotate(45deg) translate(5px, 5px);
+background-color: #a3a380;
 }
 .hamburger.active div:nth-child(2) {
-  opacity: 0;
+opacity: 0;
 }
 .hamburger.active div:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
-  background-color: #a3a380;
+transform: rotate(-45deg) translate(6px, -6px);
+background-color: #a3a380;
 }
 
-/* Убираем голубое выделение при клике на кнопку */
+/* Убираем голубое выделение при клике на кнопку /
 button,
 button:focus,
 button:active,
 .hamburger,
 .hamburger:focus,
 .hamburger:active {
-  outline: none;
-  box-shadow: none;
-  -webkit-tap-highlight-color: transparent; /* для телефонов */
+outline: none;
+box-shadow: none;
+-webkit-tap-highlight-color: transparent; / для телефонов */
 }
 
 /* Чтобы и при клике на мобильных не было подсветки */
-* {
-  -webkit-tap-highlight-color: transparent;
+
+{
+-webkit-tap-highlight-color: transparent;
 }
+
+
+С хуямкнпки в менюнпоказываются если я поставил none в background
