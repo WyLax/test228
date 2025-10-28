@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   overflow-x: hidden;
-  background-color: #9a3f3f
+  background-color: #a3a380
 }
 
 /* Кнопка гамбургера */
@@ -21,7 +21,7 @@ body {
 
 .hamburger div {
   height: 4px;
-  background-color: #c1856d;
+  background-color: #d6ce93;
   border-radius: 2px;
   transition: all 0.3s;
 }
@@ -33,7 +33,7 @@ body {
   right: -250px; /* Скрыто за пределами экрана */
   width: 250px;
   height: 100%;
-  background-color: #c1856d;
+  background-color: #d6ce93;
   box-shadow: -2px 0 5px rgba(0,0,0,0);
   padding: 50px 20px;
   box-sizing: border-box;
@@ -46,6 +46,9 @@ body {
 }
 
 .menu button {
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-weight: bold;
+  color: #efebce;
   display: block;
   width: 100%;
   margin: 10px 0;
@@ -54,28 +57,28 @@ body {
   cursor: pointer;
   transition: all 0.2s ease;
   border: none;
-  background-color: #fff;
+  background-color: #d8a48f;
   border-radius: 8px;
 }
 
 /* Эффект при наведении */
 .menu button:hover {
-  padding: 14px; /* немного увеличиваем внутренние отступы */
-  font-size: 17px; /* слегка увеличиваем текст */
-  background-color: #f5e0d6;
+  padding: 15px; /* немного увеличиваем внутренние отступы */
+  font-size: 20px; /* слегка увеличиваем текст */
+  background-color: #bb8588;
 }
 
 /* Анимация для крестика */
 .hamburger.active div:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
-  background-color: #9a3f3f;
+  background-color: #a3a380;
 }
 .hamburger.active div:nth-child(2) {
   opacity: 0;
 }
 .hamburger.active div:nth-child(3) {
   transform: rotate(-45deg) translate(6px, -6px);
-  background-color: #9a3f3f;
+  background-color: #a3a380;
 }
 
 /* Убираем голубое выделение при клике на кнопку */
