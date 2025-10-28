@@ -84,7 +84,6 @@ right: -100%;
 width: 4px;
 height: 100%;
 background-color: #ffffff;
-padding: 50px 20px;
 box-sizing: border-box;
 transition: right 0.5s;
 z-index: 1001;
