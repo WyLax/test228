@@ -63,3 +63,8 @@ body {
 .hamburger.active div:nth-child(3) {
   transform: rotate(-45deg) translate(6px, -6px);
 }
+
+button:focus,
+.hamburger:focus {
+  outline: none;
+}
