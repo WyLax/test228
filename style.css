@@ -1,59 +1,58 @@
-/* тт */
 body {
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   background: linear-gradient(135deg, #0ff, #80f);
   color: white;
-  text-align: center;
-  margin: 0;
+}
+
+/* Хедер */
+header {
+  position: relative;
   padding: 20px;
-  box-sizing: border-box;
+  text-align: left;
 }
 
-header, footer {
-  background: rgba(0,0,0,0.2);
-  border-radius: 15px;
-  padding: 15px;
-  margin-bottom: 20px;
-}
-
-button {
-  padding: 10px 20px;
+/* Кнопка меню */
+.menu-btn {
+  font-size: 24px;
+  background: none;
   border: none;
-  border-radius: 10px;
-  background: #fff;
-  color: #80f;
-  font-size: 16px;
+  color: white;
   cursor: pointer;
-  transition: 0.2s;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
-button:hover {
-  background: #e0e0e0;
+/* Шторка справа */
+#side-menu {
+  position: fixed;
+  top: 0;
+  right: -250px; /* скрыта */
+  width: 250px;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 1000;
 }
 
-/* гг */
-@media (max-width: 768px) {
-  body {
-    padding: 10px;
-    font-size: 16px;
-  }
+#side-menu a {
+  color: white;
+  text-decoration: none;
+  margin: 15px 0;
+  font-size: 18px;
+}
 
-  header, footer {
-    padding: 10px;
-    margin-bottom: 15px;
-  }
+/* Класс, который открывает меню */
+#side-menu.open {
+  right: 0;
+}
 
-  button {
-    display: block;
-    width: 100%;
-    max-width: 250px;
-    margin: 10px auto;
-    font-size: 18px;
-    padding: 14px;
-  }
-
-  ul {
-    padding-left: 0;
-    list-style: none;
-  }
+/* Основной контент */
+main {
+  padding: 20px;
 }
