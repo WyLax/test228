@@ -48,12 +48,13 @@ right: 0;
 .menu button {
 font-family: 'Helvetica', Arial, sans-serif;
 font-weight: bold;
+text-align: left;
 color: #efebce;
 display: block;
 width: 100%;
 margin: 10px 0;
 padding: 10px;
-font-size: 20px;
+font-size: 40px;
 cursor: pointer;
 transition: all 0.2s ease;
 border: none;
@@ -63,8 +64,8 @@ border-radius: 8px;
 
 /* Эффект при наведении */
 .menu button:hover {
-padding: 15px; /* немного увеличиваем внутренние отступы */
-font-size: 25px; /* слегка увеличиваем текст */
+padding: 12px; /* немного увеличиваем внутренние отступы */
+font-size: 45px; /* слегка увеличиваем текст */
 }
 
 /* Анимация для крестика */
