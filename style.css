@@ -1,3 +1,4 @@
+/* тт */
 body {
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #0ff, #80f);
@@ -5,13 +6,16 @@ body {
   text-align: center;
   margin: 0;
   padding: 20px;
+  box-sizing: border-box;
 }
+
 header, footer {
   background: rgba(0,0,0,0.2);
   border-radius: 15px;
   padding: 15px;
   margin-bottom: 20px;
 }
+
 button {
   padding: 10px 20px;
   border: none;
@@ -20,11 +24,15 @@ button {
   color: #80f;
   font-size: 16px;
   cursor: pointer;
+  transition: 0.2s;
 }
+
 button:hover {
   background: #e0e0e0;
 }
-@media (max-width: 1200px) {
+
+/* гг */
+@media (max-width: 768px) {
   body {
     padding: 10px;
     font-size: 16px;
@@ -36,9 +44,16 @@ button:hover {
   }
 
   button {
+    display: block;
     width: 100%;
     max-width: 250px;
+    margin: 10px auto;
     font-size: 18px;
-    padding: 12px;
+    padding: 14px;
+  }
+
+  ul {
+    padding-left: 0;
+    list-style: none;
   }
 }
