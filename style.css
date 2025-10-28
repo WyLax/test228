@@ -52,6 +52,17 @@ body {
   padding: 10px;
   font-size: 16px;
   cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+/* Эффект при наведении */
+.menu button:hover {
+  padding: 14px; /* немного увеличиваем внутренние отступы */
+  font-size: 17px; /* слегка увеличиваем текст */
+  background-color: #f5e0d6;
 }
 
 /* Анимация для крестика */
