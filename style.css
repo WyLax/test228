@@ -64,7 +64,7 @@ body {
 }
 .hamburger.active div:nth-child(3) {
   transform: rotate(-45deg) translate(6px, -6px);
-  background-color: #c1856d;
+  background-color: #9a3f3f;
 }
 
 /* Убираем голубое выделение при клике на кнопку */
