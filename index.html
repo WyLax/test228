@@ -4,73 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Гамбургер меню</title>
-<style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    overflow-x: hidden;
-  }
-
-  /* Кнопка гамбургера */
-  .hamburger {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 30px;
-    height: 20px;
-    cursor: pointer;
-    z-index: 1001;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .hamburger div {
-    height: 4px;
-    background-color: #333;
-    border-radius: 2px;
-    transition: all 0.3s;
-  }
-
-  /* Выдвигающееся меню */
-  .menu {
-    position: fixed;
-    top: 0;
-    right: -250px; /* Скрыто за пределами экрана */
-    width: 250px;
-    height: 100%;
-    background-color: #f4f4f4;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.3);
-    padding: 50px 20px;
-    box-sizing: border-box;
-    transition: right 0.3s;
-    z-index: 1000;
-  }
-
-  .menu.open {
-    right: 0;
-  }
-
-  .menu button {
-    display: block;
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-
-  /* Анимация для крестика */
-  .hamburger.active div:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-  .hamburger.active div:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger.active div:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
-  }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -87,15 +21,6 @@
   <button>Контакты</button>
 </div>
 
-<script>
-  const hamburger = document.getElementById('hamburger');
-  const menu = document.getElementById('menu');
-
-  hamburger.addEventListener('click', () => {
-    menu.classList.toggle('open');
-    hamburger.classList.toggle('active');
-  });
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
