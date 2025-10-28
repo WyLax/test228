@@ -76,6 +76,25 @@ padding: 12px; /* немного увеличиваем внутренние о�
 font-size: 45px; /* слегка увеличиваем текст */
 }
 
+
+mstick {
+position: fixed;
+top: 80px;
+right: -100%;
+width: 4px;
+height: 100%;
+background-color: #ffffff;
+padding: 50px 20px;
+box-sizing: border-box;
+transition: right 0.5s;
+z-index: 1000;
+}
+
+.stick.open {
+right: 0;
+}
+
+
 /* Анимация для крестика */
 .hamburger.active div:nth-child(1) {
 transform: rotate(45deg) translate(5px, 5px);
