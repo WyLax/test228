@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   overflow-x: hidden;
-  background-color: #785c32
+  background-color: #9a3f3f
 }
 
 /* Кнопка гамбургера */
@@ -33,7 +33,7 @@ body {
   right: -250px; /* Скрыто за пределами экрана */
   width: 250px;
   height: 100%;
-  background-color: #fffad1;
+  background-color: #c1856d;
   box-shadow: -2px 0 5px rgba(0,0,0,0);
   padding: 50px 20px;
   box-sizing: border-box;
