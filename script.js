@@ -1,13 +1,13 @@
-const hamburger = document.getElementById('hamburger');
+const button_menu = document.getElementById('button_menu');
 const name = document.getElementById('name');
-const menu = document.getElementById('menu');
-const menu2 = document.getElementById('menu2');
-const stick = document.getElementById('stick');
+const menu_bg = document.getElementById('menu_bg');
+const menu_text = document.getElementById('menu_text');
+const line = document.getElementById('line');
 
-hamburger.addEventListener('click', () => {
-  menu.classList.toggle('open');
-  menu2.classList.toggle('open');
-  stick.classList.toggle('open');
-  hamburger.classList.toggle('active')
+button_menu.addEventListener('click', () => {
+  menu_bg.classList.toggle('open');
+  menu_text.classList.toggle('open');
+  line.classList.toggle('open');
+  button_menu.classList.toggle('active')
   name.classList.toggle('active');
 });
