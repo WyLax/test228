@@ -27,7 +27,7 @@ z-index: 1001;
 }
 
 /* Кнопка гамбургера */
-.hamburger {
+.button_menu {
 position: fixed;
 top: 30px;
 right: 30px;
@@ -40,7 +40,7 @@ flex-direction: column;
 justify-content: space-between;
 }
 
-.hamburger div {
+.button_menu div {
 height: 4px;
 background-color: #333333;
 border-radius: 2px;
@@ -48,29 +48,28 @@ transition: all 0.5s ease;
 }
 
 /* Выдвигающееся меню */
-.menu {
+.menu_bg {
 position: fixed;
 top: 0;
 right: 100%;
 width: 100%;
 height: 100%;
 background-color: #333333;
-box-shadow: -2px 0 5px rgba(0,0,0,0);
 padding: 50px 20px;
 box-sizing: border-box;
 transition: right 0.4s ease;
 z-index: 1000;
 }
 
-.menu.open {
+.menu_bg.open {
 right: 0;
 }
 
-.menu button:first-child {
+.menu_text button:first-child {
 margin-top: 110px;
 }
 
-.menu2 {
+.menu_text {
 position: fixed;
 top: 0;
 right: 35%;
@@ -85,15 +84,15 @@ transition: right 0.5s ease;
 z-index: 1000;
 }
 
-.menu2.open {
+.menu_text.open {
 right: 0px;
 }
 
-.menu2 button:first-child {
+.menu_text button:first-child {
 margin-top: 110px;
 }
 
-.menu2 button {
+.menu_text button {
 font-family: 'MyFont1', Arial, sans-serif;
 font-weight: bold;
 text-align: left;
@@ -112,12 +111,12 @@ border-radius: 8px;
 }
 
 /* Эффект при наведении */
-.menu2 button:hover {
+.menu_text button:hover {
 padding: 15px; /* немного увеличиваем внутренние отступы */
 font-size: 69px; /* слегка увеличиваем текст */
 }
 
-.stick {
+.line {
 position: fixed;
 top: 80px;
 right: 100%;
@@ -130,34 +129,40 @@ transition: right 0.4s ease;
 z-index: 1001;
 }
 
-.stick.open {
+.line.open {
 right: 30px;
 }
 
 
+
 /* Анимация для крестика */
-.hamburger.active div:nth-child(1) {
+.button_menu.active div:nth-child(1) {
 transform: rotate(45deg) translate(5px, 5px);
 background-color: #a3a380;
 }
-.hamburger.active div:nth-child(2) {
+.button_menu.active div:nth-child(2) {
 opacity: 0;
 }
-.hamburger.active div:nth-child(3) {
+.button_menu.active div:nth-child(3) {
 transform: rotate(-45deg) translate(6px, -6px);
 background-color: #a3a380;
 }
 .name.active {
 color: #a3a380;
 }
+.name_text.active {
+color: rgba(0,0,0,0);
+}
+
+
 
 /* Убираем голубое выделение при клике на кнопку */
 button,
 button:focus,
 button:active,
-.hamburger,
-.hamburger:focus,
-.hamburger:active {
+.button_menu,
+.button_menu:focus,
+.button_menu:active {
 outline: none;
 box-shadow: none;
 -webkit-tap-highlight-color: transparent; /* для телефонов */
